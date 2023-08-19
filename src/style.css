@@ -1,0 +1,168 @@
+:root{
+    --paddingside:10vw;
+}
+* {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.firstPage {
+    padding: 50px var(--paddingside);
+    padding-bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/Background.png");
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.rightside {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.signin {
+    font-size: 20px;
+}
+
+.toplogo {
+    height: 40px;
+}
+
+.button {
+    padding: 20px 25px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    display: flex;
+    width:275px;
+}
+
+.itsfree,
+.getstarted {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.itsfree {
+    color: grey;
+}
+
+.mainfirstpage{
+    gap:15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.title{
+    font-size:60px;
+    font-weight:700;
+}
+.text{
+    font-size: 20px;
+}
+.code{
+    width: 100%;
+}
+
+.secondpage{
+    overflow: hidden;
+    padding:50px var(--paddingside);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.text2{
+ 
+    font-size: 20px;
+}
+.customcode{
+    width: 500px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:50%;
+}
+.footer{
+    display: flex;
+    padding:20px var(--paddingside);
+    height:100px;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.hidden{
+    display:none;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .text2{
+        font-size: 20px;
+    }
+    .secondpage{
+        flex-direction: column-reverse;
+    }
+    .customcode{
+        width:100%;
+    }
+    .title{
+        font-size:50px;
+        font-weight:600;
+    }
+    .title2{
+        font-size: 40px;
+        width: 100%;
+
+    }
+    .leftside{
+        padding-top: 40px;
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+        gap:10px;
+    }
+    .rightside{
+        gap:10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
+  
